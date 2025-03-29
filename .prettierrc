@@ -6,6 +6,5 @@
 	"printWidth": 80,
 	"useTabs": false,
 	"tabWidth": 2,
-	"semi": true,
-	"insertFinalNewLine": "true"
+	"semi": true
 }
