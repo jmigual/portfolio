@@ -50,9 +50,15 @@ const skillsSection = {
   title: "What I do?",
   subTitle: "I LOVE CODING DONE RIGHT",
   skills: [
-    emoji("⚡ Designing and developing high-performance backend services using C# and .NET ecosystem"),
-    emoji("⚡ Researching and implementing advanced scheduling algorithms and constraint programming solutions"),
-    emoji("⚡ Building robust CI/CD pipelines and deploying scalable applications to cloud environments")
+    emoji(
+      "⚡ Designing and developing high-performance backend services using C# and .NET ecosystem"
+    ),
+    emoji(
+      "⚡ Researching and implementing advanced scheduling algorithms and constraint programming solutions"
+    ),
+    emoji(
+      "⚡ Building robust CI/CD pipelines and deploying scalable applications to cloud environments"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -130,10 +136,13 @@ const educationInfo = {
     {
       schoolName: "Politechnical University of Catalonia (UPC, BarcelonaTech)",
       logo: require("./assets/images/logoUpc.svg").default,
-      subHeader: "Double bachelor in Computer Science and Industrial Engineering",
+      subHeader:
+        "Double bachelor in Computer Science and Industrial Engineering",
       duration: "September 2013 - July 2018",
       desc: "The double bachelor program is an elite program that let me obtain both bachelors in only a span of 5 years.",
-      descBullets: ["Bachelor's thesis on image Deep Learning for medical data at Pricess Margaret Cancer Centre in Toronto, Canada."]
+      descBullets: [
+        "Bachelor's thesis on image Deep Learning for medical data at Pricess Margaret Cancer Centre in Toronto, Canada."
+      ]
     }
   ]
 };
@@ -145,7 +154,7 @@ const techStack = {
   experience: [
     {
       Stack: "Scheduling",
-      progressPercentage: "100%" 
+      progressPercentage: "100%"
     },
     {
       Stack: "Programming",
@@ -157,12 +166,12 @@ const techStack = {
     },
     {
       Stack: "Machine Learning",
-      progressPercentage: "70%" 
+      progressPercentage: "70%"
     },
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
       progressPercentage: "60%" //Insert relative proficiency in percentage
-    },
+    }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -181,7 +190,7 @@ const workExperiences = {
       descBullets: [
         "Research on scheduling of modular flexible manufacturing systems, also known as cyber-physical systems.",
         "Modelling of the system using constraint programming",
-        "Implementation of real-time scheduling algorithms in C++ and Rust",
+        "Implementation of real-time scheduling algorithms in C++ and Rust"
       ]
     },
     {
@@ -201,9 +210,7 @@ const workExperiences = {
       date: "May 2016 - August 2016",
       companylogo: require("./assets/images/logoGsocClean.svg").default,
       desc: "Helped the development of the Mixxx Project",
-      descBullets: [
-        "GUI development in C++ and Qt",
-      ]
+      descBullets: ["GUI development in C++ and Qt"]
     }
   ]
 };
