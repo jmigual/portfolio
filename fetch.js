@@ -38,9 +38,7 @@ if (USE_GITHUB_DATA === "true") {
               name
               description
               forkCount
-              stargazers {
-                totalCount
-              }
+              stargazerCount
               url
               id
               diskUsage
@@ -79,6 +77,10 @@ if (USE_GITHUB_DATA === "true") {
       data += d;
     });
     res.on("end", () => {
+      const errors = JSON.parse(data).errors;
+      if (errors) {
+        throw new Error(JSON.stringify(errors));
+      }
       fs.writeFile("./public/profile.json", data, function (err) {
         if (err) return console.log(err);
         console.log("saved file to public/profile.json");
